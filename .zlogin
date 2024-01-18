@@ -5,3 +5,6 @@ PROMPT='
 %{$fg[yellow]%} > %{$reset_color%}'
 zstyle ':completion:*' menu false
 zstyle ':completion:*:default' list-colors ''
+
+unalias rd
+unalias grm
