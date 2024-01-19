@@ -6,5 +6,4 @@ PROMPT='
 zstyle ':completion:*' menu false
 zstyle ':completion:*:default' list-colors ''
 
-unalias rd
-unalias grm
+for i in $(alias | cut -d'=' -f1 | sed -e "s/'//g; /^-$/d"); do unalias $i; done
