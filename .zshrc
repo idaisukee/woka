@@ -10,6 +10,10 @@ export ZSH="$HOME/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="komakohe"
 
+export FZF_TMUX=1
+export FZF_TMUX_OPTS="-p 60%"
+
+
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -70,7 +74,7 @@ ZSH_CUSTOM=$HOME/prd/src/hunakosi
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git fzf)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -108,3 +112,4 @@ bindkey -v
 export TIME_STYLE='long-iso'
 zstyle ':completion:*' menu false
 zstyle ':completion:*:default' list-colors ''
+
